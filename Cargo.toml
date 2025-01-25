@@ -1,0 +1,19 @@
+[package]
+name = "rsa2048"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+num = "0.4.3"
+rand = "0.8"
+num-bigint = { version = "0.4", features = ["rand"] }
+primal = "0.3.3"
+rustc-serialize = "0.3.25"
+
+[lib]
+name = "rsabench"
+
+[[bin]]
+name = "rsabench"
+path = "src/main/main.rs"
+
